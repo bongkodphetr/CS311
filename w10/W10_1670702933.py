@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+
 import sqlite3
 
 def connection() :
@@ -170,8 +171,7 @@ def backtologin() :
     pwdentry.delete(0,END)
     userentry.focus_force()
 
-#main
-#call connection function
+
 conn,cursor = connection()
 master = mainwindow()
 img1 = PhotoImage(file="images/login2.png")
@@ -189,4 +189,3 @@ loginwindow()
 master.mainloop()
 cursor.close()
 conn.close()
-# End of w9_act1.py
